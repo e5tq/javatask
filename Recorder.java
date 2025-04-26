@@ -19,7 +19,7 @@ public class Recorder {
 		if(!map.containsKey(key)) {
 			throw new IllegalArgumentException();
 		}
-		map.containsKey(key);
+		map.remove(key);
 		System.out.println("delete:"+key);
 		}
 	public void delete() {
