@@ -3,7 +3,6 @@ package tb課題;
 public class Person {
 	public enum Gender {
 		MAN, WOMAN
-
 	}
 
 	private Gender gender;
@@ -18,7 +17,6 @@ public class Person {
 		} else if (gender == Gender.WOMAN) {
 			System.out.println("I'm a woman");
 		}
-
 	}
 
 	public static void main(String[] args) {
@@ -28,5 +26,4 @@ public class Person {
 		man.speak();
 		woman.speak();
 	}
-
 }

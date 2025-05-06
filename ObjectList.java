@@ -2,26 +2,13 @@ package tb課題;
 
 import java.util.ArrayList;
 
-public class ObjectList<T> {
-	private ArrayList<T> list;
+public class ObjectList<T> extends ArrayList<T> {
 
-	public ObjectList() {
-		list = new ArrayList<>();
-	}
-
-	public void add(T element) {
-		list.add(element);
+	public boolean add(T value) {
+		return super.add(value);
 	}
 
 	public T get(int index) {
-		return list.get(index);
-	}
-
-	public int size() {
-		return list.size();
-	}
-
-	public Iterable<T> iterable() {
-		return list;
+		return super.get(index);
 	}
 }
